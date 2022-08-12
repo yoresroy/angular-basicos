@@ -20,11 +20,14 @@ export class MainPageComponent {
     }
   ]
     
-
-
   nuevo:Personaje= {
     nombre: '',
     poder: 0
+  }
+
+  agregarNuevoPersonaje( argumento : Personaje ){
+    console.log(argumento);
+    this.personajes.push(argumento);
   }
 
 
